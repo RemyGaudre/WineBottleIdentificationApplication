@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WineRecognition.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to WineRecognition App !" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Identify the bottle you have and get some information on it !" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="First select the way you want to select the picture of the bottle :" FontSize="16" Padding="30,0,30,0"/>
+        <StackLayout Margin="20">
+            <Grid ColumnSpacing="40">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnChooseFromGallery"
+                Text="From your Gallery" 
+                FontSize="Default" 
+                FontAttributes="None"
+                BackgroundColor="#2196F3"
+                CornerRadius="20"
+                Clicked="OnClick"
+                Pressed="OnPress"
+                Released="OnRelease"/>
+                <Button x:Name="btnChooseFromCamera" 
+                Grid.Column="1"
+                Text="From your camera"
+                FontSize="Default" 
+                FontAttributes="None"
+                BackgroundColor="#2196F3"
+                CornerRadius="20"
+                Clicked="OnClick"
+                Pressed="OnPress"
+                Released="OnRelease"/>
+            </Grid>
+        </StackLayout>
+        
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WineRecognition.ImagePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image x:Name="resultImage"/>
+                <Button x:Name="goDetect"
+                    Text="Detect Object on this image"
+                    Clicked="goDetect_Clicked"/>
+                <Label x:Name="Label_test" Text="Not set"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
